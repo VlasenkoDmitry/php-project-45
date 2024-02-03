@@ -1,5 +1,7 @@
 {
     "name": "hexlet/code",
+    "description": "Mind games project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -11,5 +13,8 @@
             "email": "vlasenko.dmitry1@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+	"bin/brain-games"
+    ]
 }
