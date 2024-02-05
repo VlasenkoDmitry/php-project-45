@@ -4,8 +4,12 @@ namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\Games\Calc\culc;
+use function BrainGames\Games\Parity\parity;
 
-function play($description, $game): bool
+
+
+function play($description, $game, $gameFunction): bool
 {
 
     line($description);
@@ -15,17 +19,22 @@ function play($description, $game): bool
     $numberRound = 0;
     while ($inGame && $numberRound < $maxRounds) {
         $arrayParamQuestion = array();
+        /*
         switch ($game) {
             case 'calc':
-                $arrayParamQuestion = getExpressionAndAnswer();
+                $arrayParamQuestion = $getExpressionAndAnswer();
                 break;
             case 'parity':
-                $arrayParamQuestion = getrandomNumberAndParity();
+                $arrayParamQuestion = $getrandomNumberAndParity();
                 break;
             default:
                 $arrayParamQuestion = ["1+1", 2];
                 break;
         }
+        */
+        $arrayParamQuestion = $gameFunction();
+
+
         $paramQuestion = $arrayParamQuestion[0];
         $rightAnswer = $arrayParamQuestion[1];
 
@@ -44,7 +53,7 @@ function play($description, $game): bool
 }
 
 
-
+/*
 function getExpressionAndAnswer(): array
 {
     $lower = 0;
@@ -75,34 +84,8 @@ function getExpressionAndAnswer(): array
 function getrandomNumberAndParity(): array
 {
     $expression = random_int(0, 999);
-    $rightAnswer = checkParity($expression);
+    $rightAnswer = $expression % 2 === 0 ? 'yes' : "no";
     return array($expression,$rightAnswer);
 }
-
-function checkParity($number): string
-{
-    return $number % 2 === 0 ? 'yes' : "no";
-}
-
-
-/*
-2 игры
-
-общий алгоритм
-
-приветствие и взять имя
-показать правила                        \
-Начать цикл максимум 3 раза
-    получить вопрос                     \
-    показать вопрос
-    получить ответ пользователя
-    получить верный ответ
-    сравнить ответ с верным ответом
-    отреагировать
-
-
-
-
-разное
 
 */
