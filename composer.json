@@ -7,11 +7,11 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
+            "src/Games/Calc.php",
+            "src/Games/Parity.php",
             "src/Cli.php",
             "src/Engine.php",
-            "src/Welcome.php",
-            "src/Games/Parity.php",
-            "src/Games/Calc.php"
+            "src/OneWayComm.php"            
         ]
     },
     "authors": [
