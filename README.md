@@ -8,3 +8,6 @@ Parity
 
 Cacl
 <a href="https://asciinema.org/a/Rji1VxTBuc74vDXiPP4r9881B" target="_blank"><img src="https://asciinema.org/a/Rji1VxTBuc74vDXiPP4r9881B.svg" /></a>
+
+Gcd
+<a href="https://asciinema.org/a/A3p0xFO3qhMR64Y1G2Hn1Czhr" target="_blank"><img src="https://asciinema.org/a/A3p0xFO3qhMR64Y1G2Hn1Czhr.svg" /></a>
