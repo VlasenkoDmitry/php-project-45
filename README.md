@@ -14,3 +14,7 @@ Cacl
 Gcd
 
 <a href="https://asciinema.org/a/A3p0xFO3qhMR64Y1G2Hn1Czhr" target="_blank"><img src="https://asciinema.org/a/A3p0xFO3qhMR64Y1G2Hn1Czhr.svg" /></a>
+
+Progression
+
+<a href="https://asciinema.org/a/FfCBom5HkAPuAeW6cqYToXzLg" target="_blank"><img src="https://asciinema.org/a/FfCBom5HkAPuAeW6cqYToXzLg.svg" /></a>
