@@ -11,7 +11,7 @@ function gameCalc()
     $name = greetAndGetUserName();
     $description = 'What is the result of the expression?';
 
-    $gameFunction = function() {
+    $gameFunction = function () {
         $lower = 0;
         $upper = 3;
         $one = random_int($lower, $upper);
