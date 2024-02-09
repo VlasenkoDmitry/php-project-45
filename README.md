@@ -18,3 +18,7 @@ Gcd
 Progression
 
 <a href="https://asciinema.org/a/FfCBom5HkAPuAeW6cqYToXzLg" target="_blank"><img src="https://asciinema.org/a/FfCBom5HkAPuAeW6cqYToXzLg.svg" /></a>
+
+Prime
+
+<a href="https://asciinema.org/a/oI1lkUYLmrD58E2VuHxkVDGwL" target="_blank"><img src="https://asciinema.org/a/oI1lkUYLmrD58E2VuHxkVDGwL.svg" /></a>
