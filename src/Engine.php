@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function play($description, callable $gameFunction): bool
+function playAndGetResult($description, callable $gameFunction): bool
 {
     $inGame = true;
     $maxRounds = 3;
@@ -13,8 +13,8 @@ function play($description, callable $gameFunction): bool
 
     line($description);
     while ($inGame && $numberRound < $maxRounds) {
-        [$paramQuestion,$rightAnswer] = $gameFunction();
-        line("Question: {$paramQuestion}");
+        [$expression,$rightAnswer] = $gameFunction();
+        line("Question: {$expression}");
         $answer = prompt("Your answer");
         if ($rightAnswer == $answer) {
             line("Correct!");
