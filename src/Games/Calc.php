@@ -29,7 +29,7 @@ function gameFunction()
     $operationArray = array("+","-","*");
     $rand = random_int(0, count($operationArray) - 1);
     $operation = $operationArray[$rand];
-    $expression = "{$one}{$operation}{$two}";
+    $expression = "{$one} {$operation} {$two}";
     $rightAnswer = eval("return $expression;");
     return [$expression,$rightAnswer];
 }
