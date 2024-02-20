@@ -9,7 +9,7 @@ use function BrainGames\Engine\playAndGetResult;
 function gameParity()
 {
     $name = greetAndGetUserName();
-    $description = 'Answer "yes" if the number is even, otherwise answer "no"';
+    $description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
     $gameFunction = function () {
         [$expression, $rightAnswer] = gameFunction();
