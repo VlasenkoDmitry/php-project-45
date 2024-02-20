@@ -22,29 +22,15 @@ function gameProgression()
 
 function gameFunction()
 {
-    $mincountInProgresss = 5;
-    $maxcountInProgresss = 10;
-    $minRandomNumberInProgressStart = -20;
-    $maxRandomNumberInProgressStart = -11;
-    $minRandomNumberInProgressEnd = 100;
-    $maxRandomNumberInProgressEnd = 200;
-
-    $countInProgress = random_int($mincountInProgresss, $maxcountInProgresss);
-    $start = random_int($minRandomNumberInProgressStart, $maxRandomNumberInProgressStart);
-    $end = random_int($minRandomNumberInProgressEnd, $maxRandomNumberInProgressEnd);
-    $maxStep = (int)(($end - $start) / $countInProgress);
-    $step = random_int(1, $maxStep);
-
-    $progressionArray = [];
-    for ($i = $start; $i <= $end; $i += $step) {
-        $progressionArray[] = $i;
+    $progressionStart = rand(1, 100);
+    $progressionMultiplicator = rand(-10, 10);
+    $emptyPosition = rand(0, 9);
+    $progressionList = [$progressionStart];
+    foreach (range(1, 9) as $i) {
+        $progressionList[$i] = $progressionList[$i - 1] + $progressionMultiplicator;
     }
-
-    $indexStartViewProgr = random_int(0, (count($progressionArray)) - $countInProgress);
-    $viewProgressionArray = array_slice($progressionArray, $indexStartViewProgr, $countInProgress);
-    $indexHiddenNumber = random_int(0, $countInProgress - 1);
-    $rightAnswer = $viewProgressionArray[$indexHiddenNumber];
-    $viewProgressionArray[$indexHiddenNumber] = "..";
-    $expression = implode(" ", $viewProgressionArray);
-    return array($expression, $rightAnswer);
+    $correctAnswer = (string) $progressionList[$emptyPosition];
+    $progressionList[$emptyPosition] = "..";
+    $question = implode(' ', $progressionList);
+    return [$question, $correctAnswer];
 }
