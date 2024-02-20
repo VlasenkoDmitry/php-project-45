@@ -24,7 +24,7 @@ function gameFunction()
 {
     $mincountInProgresss = 5;
     $maxcountInProgresss = 10;
-    $minRandomNumberInProgressStart = 1;
+    $minRandomNumberInProgressStart = -20;
     $maxRandomNumberInProgressStart = 50;
     $minRandomNumberInProgressEnd = 100;
     $maxRandomNumberInProgressEnd = 200;

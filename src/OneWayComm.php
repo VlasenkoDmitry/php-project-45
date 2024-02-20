@@ -13,7 +13,7 @@ function greetAndGetUserName(): string
     return $name;
 }
 
-function showResultAndBye($name, $result)
+function showResultAndBye(string $name, string $result)
 {
     if ($result) {
         line("Congratulations, {$name}!");

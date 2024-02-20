@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function playAndGetResult($description, callable $gameFunction): bool
+function playAndGetResult(string $description, callable $gameFunction): bool
 {
     $inGame = true;
     $maxRounds = 3;
